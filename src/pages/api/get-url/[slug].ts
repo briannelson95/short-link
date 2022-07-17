@@ -33,7 +33,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader(
       "Cache-Control",
-      "s-maxage=1000000000, stale-while-revalidate"
+      "s-maxage=1, stale-while-revalidate"
     );
   
     return res.json(data);
